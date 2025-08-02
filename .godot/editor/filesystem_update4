@@ -3,3 +3,5 @@ res://Cursor.cs
 res://Main.cs
 res://cursor.tscn
 res://testCursor.tscn
+res://SceneManager.cs
+res://scene_manager.tscn

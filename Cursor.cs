@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public partial class Cursor : Area2D
 {
-	private int currentTimeIndex = 0;
+	public int currentTimeIndex = 0;
 
 	[Export]
 	public bool isPlayer;
