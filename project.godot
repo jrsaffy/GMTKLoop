@@ -11,7 +11,8 @@ config_version=5
 [application]
 
 config/name="Loop"
-config/features=PackedStringArray("4.4", "GL Compatibility")
+run/main_scene="uid://bvhj8ly3435mt"
+config/features=PackedStringArray("4.4", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [dotnet]
