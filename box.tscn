@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ngam2mmw8c7u"]
+
+[ext_resource type="Texture2D" uid="uid://dws6kba12uvj2" path="res://Sprites/blue_box.png" id="1_g2tbl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oq5cr"]
+
+[node name="Box" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_oq5cr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g2tbl")
