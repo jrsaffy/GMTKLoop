@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvhj8ly3435mt"]
+
+[ext_resource type="Script" uid="uid://bha57l5tp1p8i" path="res://Main.cs" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://b312bdo2t0wqs" path="res://icon.svg" id="2_1bvp3"]
+[ext_resource type="Script" uid="uid://d4dixx2na58bm" path="res://Cursor.cs" id="2_h2yge"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_0xm2m")
+
+[node name="Cursor" type="Sprite2D" parent="."]
+texture = ExtResource("2_1bvp3")
+script = ExtResource("2_h2yge")
+
+[node name="CursorGhost" type="Sprite2D" parent="."]
+texture = ExtResource("2_1bvp3")
+script = ExtResource("2_h2yge")
