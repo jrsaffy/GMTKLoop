@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1754153009
+Cursor.cs::CSharpScript::9201459709385016322::1754150137::0::1::::<>Sprite2D<><>0<>0<><>::
+icon.svg::CompressedTexture2D::4407023452212629090::1754148692::1754150184::1::::<><><>0<>0<>8c40ec3371291c13b2ef9d387d99697b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Main.cs::CSharpScript::2879621869332620870::1754152927::0::1::::<>Node2D<><>0<>0<><>::
+main.tscn::PackedScene::3875443044648198099::1754153009::0::1::::<><><>0<>0<><>::uid://bha57l5tp1p8i::::res://Main.cs<>uid://qwagmupgihgn::::res://Sprites/blue_arrow.png<>uid://d4dixx2na58bm::::res://Cursor.cs<>uid://8b1cjw4b7b2l::::res://Sprites/red_arrow.png
+::res://Sprites/::1754153242
+blue_arrow.png::CompressedTexture2D::1168449185427424757::1754150682::1754150684::1::::<><><>0<>0<>983a255c2f1569d97656d5a96379215d<>res://.godot/imported/blue_arrow.png-837341986b10b06acdabaa6b4fa0e277.ctex::
+blue_arrow_clicked.png::CompressedTexture2D::2018008044372110760::1754151713::1754151839::1::::<><><>0<>0<>cbbf1be34ebcd8993f3559224eab065c<>res://.godot/imported/blue_arrow_clicked.png-17da268694f7c428d93f79347de28655.ctex::
+red_arrow.png::CompressedTexture2D::2319878939224938197::1754150682::1754150684::1::::<><><>0<>0<>8170265298225bba4de45d394801e237<>res://.godot/imported/red_arrow.png-f880093e0ab5ab18a7cd95b9a513b88b.ctex::
+red_arrow_clicked.png::CompressedTexture2D::2158907304645758555::1754153242::1754153254::1::::<><><>0<>0<>46a6b8b21f5b5658ebe246abbfe64dee<>res://.godot/imported/red_arrow_clicked.png-a99b4cec5cbe5e2bf52ba5cfda57e73d.ctex::
