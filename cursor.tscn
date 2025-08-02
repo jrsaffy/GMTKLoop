@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://by8a0sk2v5uhy"]
+
+[ext_resource type="Script" uid="uid://d4dixx2na58bm" path="res://Cursor.cs" id="1_fsq4c"]
+[ext_resource type="Texture2D" uid="uid://qwagmupgihgn" path="res://Sprites/blue_arrow.png" id="2_5l68f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e4vdg"]
+radius = 10.4403
+
+[node name="Cursor" type="Area2D"]
+script = ExtResource("1_fsq4c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 5)
+shape = SubResource("CircleShape2D_e4vdg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_5l68f")
+offset = Vector2(16, 16)
