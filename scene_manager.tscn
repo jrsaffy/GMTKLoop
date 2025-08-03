@@ -2,5 +2,34 @@
 
 [ext_resource type="Script" uid="uid://cle3tdsvxh30s" path="res://SceneManager.cs" id="1_jo5df"]
 
-[node name="SceneManager" type="Node2D"]
+[node name="SceneManager" type="Node"]
 script = ExtResource("1_jo5df")
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="RoundTimer" type="ProgressBar" parent="UILayer"]
+custom_minimum_size = Vector2(33, 0)
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+grow_horizontal = 0
+grow_vertical = 2
+fill_mode = 2
+show_percentage = false
+
+[node name="WorldViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="WorldViewport" type="SubViewport" parent="WorldViewportContainer"]
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="WorldManager" type="Node2D" parent="WorldViewportContainer/WorldViewport"]

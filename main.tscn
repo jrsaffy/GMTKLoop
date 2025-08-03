@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://bvhj8ly3435mt"]
 
-[ext_resource type="Script" uid="uid://bha57l5tp1p8i" path="res://Main.cs" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://bha57l5tp1p8i" path="res://SpaceBarCursors.cs" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://qwagmupgihgn" path="res://Sprites/blue_arrow.png" id="2_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://8b1cjw4b7b2l" path="res://Sprites/red_arrow.png" id="4_lquwl"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_0xm2m")
+script = ExtResource("1_h2yge")
 
 [node name="Cursor" type="Sprite2D" parent="."]
 texture = ExtResource("2_1bvp3")
