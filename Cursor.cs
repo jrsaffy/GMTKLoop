@@ -26,12 +26,12 @@ public partial class Cursor : Area2D
 	{
 		if (Input.IsActionPressed("click"))
 		{
-			_cursor.Texture = clickedTexture;
+			ghostClick(true);
 			return true;
 		}
 		else
 		{
-			_cursor.Texture = arrowTexture;
+			ghostClick(false);
 			return false;
 		}
 
@@ -42,7 +42,32 @@ public partial class Cursor : Area2D
 		if (clicked)
 		{
 			_cursor.Texture = clickedTexture;
-			
+			var spaceState = GetWorld2D().DirectSpaceState;
+
+			var query = new PhysicsPointQueryParameters2D
+			{
+				Position = Position,
+				CollideWithAreas = true,
+				CollideWithBodies = true
+			};
+
+			var results = spaceState.IntersectPoint(query, maxResults: 32);
+
+
+		    foreach (Godot.Collections.Dictionary result in results)
+		    {
+		        if (result.TryGetValue("collider", out var colliderVariant))
+		        {
+		            var collider = colliderVariant.AsGodotObject();
+		
+		            if (collider is VictoryBox victoryBox)
+		            {
+		                GD.Print($"VictoryBox found: {victoryBox.Name}");
+		                victoryBox.OnClick(color); // Or whatever method you want to call
+		            }
+		        }
+		    }
+
 		}
 		else
 		{

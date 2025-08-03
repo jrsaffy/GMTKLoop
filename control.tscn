@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvuv5pmhbk8ob"]
+
+[ext_resource type="Script" uid="uid://bvi0o7evsvp8c" path="res://MainMenu.cs" id="1_0fbet"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_0fbet")
+
+[node name="Level1Button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "iLevel 1"

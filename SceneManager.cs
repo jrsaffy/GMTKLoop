@@ -3,10 +3,12 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 
-public partial class SceneManager : Node2D
+public partial class SceneManager : Node
 {
 	List<String> colors = new() { "red", "green", "blue", "yellow", "purple" };
 	Stopwatch timekeeper = new();
+	private ProgressBar _roundTimer;
+	private Node2D _world;
 
 	[Export]
 	public int roundTime = 10;
@@ -22,7 +24,7 @@ public partial class SceneManager : Node2D
 		Cursor cursor = (Cursor)cursorLoader.Instantiate();
 		cursor.color = color;
 		cursors[color] = cursor;
-		AddChild(cursor);
+		_world.AddChild(cursor);
 
 		
 		cursor.isPlayer = true;
@@ -51,6 +53,11 @@ public partial class SceneManager : Node2D
 
 	public override void _Ready()
 	{
+		
+		_world = GetNode<Node2D>("WorldViewportContainer/WorldViewport/WorldManager");
+		_roundTimer = GetNode<ProgressBar>("UILayer/RoundTimer");
+		_roundTimer.MaxValue = roundTime;
+		_roundTimer.Value = 0;
 		timekeeper.Start();
 		newRound();
 	}
@@ -60,6 +67,7 @@ public partial class SceneManager : Node2D
 		{
 			newRound();
 		}
+		_roundTimer.Value = timekeeper.ElapsedMilliseconds / (float)(roundTime * 1000) * roundTime;
 
 	}
 

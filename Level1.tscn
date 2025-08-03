@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8qtbgm0d614e"]
+
+[ext_resource type="PackedScene" uid="uid://b4u3i24r7ryku" path="res://scene_manager.tscn" id="1_kyxg0"]
+[ext_resource type="PackedScene" uid="uid://d1685d3o1em2g" path="res://VictoryBox.tscn" id="2_mc20k"]
+
+[node name="SceneManager" instance=ExtResource("1_kyxg0")]
+
+[node name="VictoryBox" parent="WorldViewportContainer/WorldViewport/WorldManager" index="0" instance=ExtResource("2_mc20k")]
+position = Vector2(250, 250)
